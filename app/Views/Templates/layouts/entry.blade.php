@@ -12,7 +12,7 @@
 
 <div class="header hidden-gt-sm tw-p-[10px]" style="background:var(--header-gradient)">
     <a href="{!! BASE_URL !!}" target="_blank">
-        <img src="{{ BASE_URL }}/dist/images/logo.svg" class="tw-h-full" style="width: auto; max-width: 100%; object-fit: contain;" />
+        <img src="{{ BASE_URL }}/dist/images/xpredict-logo.png" class="tw-h-full" style="width: auto; max-width: 100%; max-height: 40px; object-fit: contain;" />
     </a>
 </div>
 
@@ -21,7 +21,7 @@
 
         <div class="logo">
             <a href="{!! BASE_URL !!}" target="_blank">
-                <img src="{{ BASE_URL }}/dist/images/logo.svg" />
+                <img src="{{ BASE_URL }}/dist/images/xpredict-logo.png" style="max-height: 48px; object-fit: contain;" />
             </a>
         </div>
 
@@ -55,8 +55,8 @@
         </div>
 
     </div>
-    <div class="leantimeLogo">
-        <img style="height: 25px;" src="{!! BASE_URL !!}/dist/images/logo-powered-by-leantime.png">
+    <div class="leantimeLogo" style="font-size: 13px; color: #888; font-weight: 500; letter-spacing: 0.3px;">
+        powered by <span style="color: #1a4fba; font-weight: 700;">xpredict digital</span>
     </div>
 </div>
 

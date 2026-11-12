@@ -18,7 +18,7 @@ services:
       retries: 3
 
   leantime:
-    image: leantime/leantime:3.4.12
+    image: leantime/leantime:latest
     restart: unless-stopped
     env_file: ./.env                                        # Environment file with settings
     # Add security options
@@ -35,6 +35,8 @@ services:
     networks:
       - leantime-net
     volumes:
+      - ../app:/var/www/html/app                            # Mount local app code for development
+      - ../public/dist/images/xpredict-logo.png:/var/www/html/public/dist/images/xpredict-logo.png
       - public_userfiles:/var/www/html/public/userfiles     # Volume to store public files, logo etc
       - userfiles:/var/www/html/userfiles                   # Original volume name for compatibility
       - plugins:/var/www/html/app/Plugins                   # Plugin storage

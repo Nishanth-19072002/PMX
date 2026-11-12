@@ -78,10 +78,8 @@ class Menu
             15 => [
                 'type' => 'submenu', 'id' => 'administration', 'title' => 'menu.sidemenu_administration', 'visual' => 'open', 'itemRole' => 'admin',
                 'submenu' => [
-                    5 => ['type' => 'item', 'module' => 'plugins', 'permission' => 'plugins.manage', 'title' => 'menu.leantime_apps', 'icon' => 'fa fa-fw fa-puzzle-piece', 'tooltip' => 'menu.leantime_apps_tooltip', 'href' => '/plugins/marketplace', 'active' => ['marketplace', 'myapps']],
                     10 => ['type' => 'item', 'module' => 'connector', 'permission' => 'connector.manage', 'title' => 'menu.integrations', 'icon' => 'fa fa-fw fa-circle-nodes', 'tooltip' => 'menu.connector_tooltip', 'href' => '/connector/show', 'active' => ['show']],
                     15 => ['type' => 'item', 'module' => 'setting', 'permission' => 'company.settings.view', 'title' => 'menu.company_settings', 'icon' => 'fa fa-fw fa-cogs', 'tooltip' => 'menu.company_settings_tooltip', 'href' => '/setting/editCompanySettings', 'active' => ['editCompanySettings']],
-
                 ],
             ],
         ],

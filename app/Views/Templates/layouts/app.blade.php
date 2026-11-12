@@ -23,7 +23,7 @@
                 <div class="logo">
                     <a
                         href="{{ BASE_URL }}"
-                        style="background-image: url('{{ BASE_URL }}/dist/images/logo.svg')"
+                        style="background-image: url('{{ BASE_URL }}/dist/images/xpredict-logo.png'); background-size: contain; background-repeat: no-repeat; background-position: center left; width: 170px; height: 38px; display: inline-block;"
                     >&nbsp;</a>
                 </div>
 

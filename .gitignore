@@ -140,3 +140,7 @@ cleanup-architecture.md
 
 # Composer binary — committed by accident; not part of the repository
 composer.phar
+
+cloudflared.exe
+*.exe
+.docker/.env
