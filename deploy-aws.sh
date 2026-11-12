@@ -78,7 +78,15 @@ echo "[+] Created production .docker/.env file"
 
 # 6. Launch Docker Containers
 echo "[*] Starting containers via Docker Compose..."
-docker compose -f .docker/docker-compose.yml up -d --force-recreate
+if command -v docker-compose &> /dev/null; then
+    docker-compose -f .docker/docker-compose.yml up -d --force-recreate
+elif docker compose version &> /dev/null; then
+    docker compose -f .docker/docker-compose.yml up -d --force-recreate
+else
+    echo "[*] Installing docker-compose..."
+    sudo apt-get update -y && sudo apt-get install -y docker-compose docker-compose-plugin
+    docker-compose -f .docker/docker-compose.yml up -d --force-recreate
+fi
 
 echo ""
 echo "=================================================================="
